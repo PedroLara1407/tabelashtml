@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas em HTML</title>
+    <style>
+        table {
+            border: 1px #000000 solid;
+            width: 50%;
+            margin: auto;
+            /* Deixa os dois lados da margem iguais */
+            border-collapse: separate;
+            /* ira mudar a bordar do seu elemento */
+            font-family: ;
+        }
+
+        th,
+        td {
+            border: 1px rgb(156, 15, 15) solid;
+            padding: 3px;
+            /* espaçamento entre as linhas */
+        }
+
+        th {
+            background-color: #e62f2f;
+            color: aliceblue;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        tr:hover {
+            background-color: #f8b6b6;
+
+        }
+
+        p {
+            width: 50%;
+            margin: auto;
+            padding: 3px;
+            text-align: center;
+        }
+        
+    </style>
+</head>
+
+<body>
+
+    <table>
+        <caption> Preços de Produtos Eletrônicos </caption>
+        <!-- usado para descrever uma tabela  -->
+        <thead>
+
+            <tr>
+                <th>Produtos</th>
+                <th>Preços </th>
+            </tr>
+
+        <tbody>
+            <tr>
+                <td>Notebook</td>
+                <td>R$ 3.500,00</td>
+            </tr>
+
+
+            <tr>
+                <td>Smarphone</td>
+                <td>R$ 1.200,00</td>
+            </tr>
+
+            <tr>
+                <td>Playstation 5</td>
+                <td>R$ 5.000,00</td>
+            </tr>
+
+            <tr>
+                <td>Notebook da Xuxa</td>
+                <td>R$250,00</td>
+            </tr>
+        </tbody>
+
+
+
+        <tfoot>
+            <tr>Total</tr>
+            <tr></tr>
+        </tfoot>
+
+        </thead>
+    </table>
+
+    <table>
+        <caption> Horário de Aulas </caption>
+        <thead>
+            <tr>
+                <th colspan="5">Horário de Aulas - Turma 2024</th>
+            </tr>
+
+            <tr>
+                <th colspan="1">Horário</th>
+                <th colspan="1">Segunda-feira</th>
+                <th colspan="1">Terça-feira</th>
+                <th colspan="1">Quara-feira</th>
+                <th colspan="1">Quinta-feira</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td colspan="1">08:00 - 09:00</td>
+                <td colspan="1">Matemática</td>
+                <td colspan="1">História</td>
+                <td colspan="1" rowspan="2">Educação fisica</td>
+                <td colspan="1">Química</td>
+            </tr>
+
+            <tr>
+                <td colspan="1">09:00 - 10:00</td>
+                <td colspan="2">Português ( 2horas )</td>
+                <td colspan="1">Bíologia</td>
+            </tr>
+
+            <tr>
+                <td colspan="1">10:00 - 11:00</td>
+                <td colspan="1">Geografía</td>
+                <td colspan="1">Física</td>
+                <td colspan="1">Matemática</td>
+                <td colspan="1">História</td>
+            </tr>
+
+            <tr>
+                <td colspan="1">11:00 - 12:00</td>
+                <td colspan="4">Projeto Interdisciplinar (Todas as disciplinas) </td>
+            </tr>
+
+        </tbody>
+    </table>
+</body>
+
+<footer>
+    <p><a href="https://www.dio.me/articles/tabelas-em-html5">Fonte dos codigos para mesclagem de Células</a></p>
+
+</footer>
+
+
+</html>
